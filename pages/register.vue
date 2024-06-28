@@ -11,6 +11,7 @@
           Email
           <input type="email" v-model="form.email" />
         </label>
+        <!-- <p class="text-3xl">{{ form.name}}</p> -->
         <label>
           Mot de passe
           <input type="password" v-model="form.password" />
@@ -50,7 +51,7 @@
   })
   async function register(payload: RegisterPayload) {
     const res = await axios.post('/api/register', payload)
-    console.log(res)
+    useRouter().push('/me')
   }
   </script>
   

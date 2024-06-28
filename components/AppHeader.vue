@@ -5,7 +5,7 @@
           URLShortify
         </NuxtLink>
 
-        <div class="space-x-3">
+        <div class="space-x-5 text-xl">
           <NuxtLink to="/me">Profile</NuxtLink>
           <NuxtLink to="/links">Liens</NuxtLink>
           <NuxtLink to="#">
